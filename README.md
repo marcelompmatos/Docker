@@ -29,7 +29,7 @@ Passos
     docker image ls
 ```
 
-5. Teste a imagem localmente no Cloud Shell
+5. Teste a imagem localmente no Cloud Shell👋
 
 ```bash
     docker container run --name app -p 5000:5000 app:1.0
@@ -39,16 +39,16 @@ Passos
     docker container stop app
 ```
 
-6. Adicione tag a imagem
+6. Adicione tag a imagem👋
 
 ```bash
     docker tag app:1.0 us.gcr.io/<ID_PROJETO>/app
 ```
 
-7. Suba (Push) a imagem para Container Registry na Google Cloud
+7. Suba (Push) a imagem para Container Registry na Google Cloud👋
 
 ```bash
     docker push us.gcr.io/<ID_PROJETO>/app
 ```
 
-## 🛠 8. Faça o deploy da aplicação em container no Google Cloud Run usando a imagem criada
+## 🛠 8. Faça o deploy da aplicação em container no Google Cloud Run usando a imagem criada👋
