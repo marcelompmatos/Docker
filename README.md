@@ -24,14 +24,31 @@ Passos
 4. Unzip app.zip 👋
 5. Crie (Build) a Docker image 👋
 
-⚡ MultiCloud com DevOps 
-## 🛠 Provisionar Bucket no S3 AWS - Executando o arquivo main.tf
-
-
 ```bash
-  terraform init
-  terraform plan
-  terraform apply
+    docker build -t app:1.0 .
+    docker image ls
 ```
 
+5. Teste a imagem localmente no Cloud Shell
+
+```bash
+    docker container run --name app -p 5000:5000 app:1.0
+    docker container ls 
+    docker container ls --all
+    docker container start app
+    docker container stop app
+```
+
+6. Adicione tag a imagem
+
+```bash
+    docker tag app:1.0 us.gcr.io/<ID_PROJETO>/app
+```
+
+7. Suba (Push) a imagem para Container Registry na Google Cloud
+
+```bash
+    docker push us.gcr.io/<ID_PROJETO>/app
+```
+8. Faça o deploy da aplicação em container no Google Cloud Run usando a imagem criad
 
