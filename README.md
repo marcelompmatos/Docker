@@ -2,8 +2,8 @@
 
 Passos
 
-Baixar o .zip https://github.com/marcelompmatos/Docker.git
-Crie o arquivo Dockerfile👋
+1.Baixar o .zip https://github.com/marcelompmatos/Docker.git
+2.Crie o arquivo Dockerfile👋
 ```bash
     FROM python:3
 
