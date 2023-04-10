@@ -50,5 +50,5 @@ Passos
 ```bash
     docker push us.gcr.io/<ID_PROJETO>/app
 ```
-8. Faça o deploy da aplicação em container no Google Cloud Run usando a imagem criad
 
+## 🛠 8. Faça o deploy da aplicação em container no Google Cloud Run usando a imagem criada
